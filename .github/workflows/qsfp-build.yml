@@ -15,7 +15,7 @@ on:
     - cron: '36 1,13,16,19,22 * * *'
 jobs:
   Qsfp-Service-Build-Hourly:
-    runs-on: 32-core-ubuntu
+    runs-on: self-hosted-ubuntu-danish
     steps:
       - run: echo "Confirming hardware specications:"; sudo lscpu
       - name: Clean workspace
