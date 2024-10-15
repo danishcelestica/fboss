@@ -17,7 +17,7 @@ jobs:
   Qsfp-Service-Build-Hourly:
     runs-on: self-hosted-ubuntu-danish
     steps:
-      - run: echo "Confirming hardware specications:"; sudo lscpu
+      - run: echo "Confirming hardware specications:"; lscpu
       - name: Clean workspace
         run: sudo rm -rf ${{ github.workspace }}/*
       - name: Check out repository code
